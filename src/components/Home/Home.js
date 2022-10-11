@@ -7,7 +7,7 @@ const Home = () => {
     const quizes = useLoaderData();
     return (
         <div>
-            <div className='mt-5 container'>
+            <div className='mt-4 container'>
                 <Card>
                     <Card.Header>Welcome To Exam-Site Website </Card.Header>
                     <Card.Body>
