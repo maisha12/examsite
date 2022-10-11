@@ -12,7 +12,7 @@ const Home = () => {
                     <Card.Header>Welcome To Exam-Site Website </Card.Header>
                     <Card.Body>
                         <h4>An exam is a formal test that you take to show your knowledge or ability in a particular subject, or to obtain a qualification.</h4>
-                        <Card.Title>Here, we can see the all courses quiz Details!!!</Card.Title>
+                        <Card.Title>Here, we can see all the courses quiz Details!!!</Card.Title>
                     </Card.Body>
                 </Card>
             </div>
