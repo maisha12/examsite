@@ -13,7 +13,7 @@ function Header() {
 
                         <Link className='ms-2' to="/">Home</Link>
                         <Link className='ms-2' to="/blog">Blog</Link>
-                        <Link className='ms-2' to="/blog">About</Link>
+                        <Link className='ms-2' to='/about'>About</Link>
                         <Link className='ms-2' to='/statistics'>Statistics</Link>
                     </Nav>
                 </Container>
