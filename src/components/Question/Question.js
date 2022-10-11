@@ -22,7 +22,7 @@ const Question = ({ topics }) => {
     }
     return (
         <div className='container mt-5 bg-info p-6 rounded position-relative'>
-            <h2>${question}</h2>
+            <h6>{question}</h6>
             <FontAwesomeIcon onClick={() => showAnswer(correctAnswer)} className='position-absolute top-0 end-0 m-4' icon={faEye}></FontAwesomeIcon>
             <ol>
                 {
