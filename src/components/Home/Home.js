@@ -5,7 +5,6 @@ import Quiz from '../Quiz/Quiz';
 
 const Home = () => {
     const quizes = useLoaderData();
-    console.log(quizes.data);
     return (
         <div>
             <div className='mt-5 container'>
