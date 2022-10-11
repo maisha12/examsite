@@ -8,6 +8,7 @@ import { AccordionButton } from 'react-bootstrap';
 
 import About from './components/About/About';
 import Statistics from './components/Statistics/Statistics';
+import Details from './components/Details/Details';
 function App() {
   const router = createBrowserRouter([
     {
@@ -31,6 +32,13 @@ function App() {
           path: '/statistics',
           element: <Statistics></Statistics>
         },
+        {
+          path: '/details/:detailsid',
+          loader: async ({ params }) => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.detailsid}`)
+          },
+          element: <Details></Details>
+        }
       ]
     }
   ])

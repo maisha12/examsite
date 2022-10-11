@@ -1,8 +1,12 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const QuizCard = ({ quiz }) => {
-    console.log(quiz);
+    const navigate = useNavigate()
+    const navHandle = () => {
+        navigate(`/details/${quiz.id}`)
+    }
     return (
         <div className='mt-5 container'>
             <Card style={{ width: '18rem' }}>
@@ -17,7 +21,8 @@ const QuizCard = ({ quiz }) => {
 
                         Total Question:{quiz.total}
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+
+                    <Button onClick={navHandle} variant="primary">View Details</Button>
                 </Card.Body>
             </Card>
         </div>
