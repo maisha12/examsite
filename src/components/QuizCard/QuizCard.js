@@ -10,7 +10,7 @@ const QuizCard = ({ quiz }) => {
     return (
         <div className='mt-5 container'>
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={quiz.logo} />
+                <Card.Img className='bg-dark' variant="top" src={quiz.logo} />
                 <Card.Body>
                     <Card.Title>
                         {quiz.name}

@@ -5,6 +5,8 @@ import Main from './layout/Main';
 import Home from './components/Home/Home';
 import Blog from './components/Blog/Blog';
 import { AccordionButton } from 'react-bootstrap';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import About from './components/About/About';
 import Statistics from './components/Statistics/Statistics';
@@ -30,6 +32,7 @@ function App() {
         },
         {
           path: '/statistics',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Statistics></Statistics>
         },
         {
@@ -44,7 +47,10 @@ function App() {
   ])
   return (
     <div className="App">
-      <RouterProvider router={router}></RouterProvider>
+      <div>
+        <RouterProvider router={router}></RouterProvider>
+        <ToastContainer></ToastContainer>
+      </div>
     </div>
   );
 }
